@@ -1173,6 +1173,8 @@ void MapPort(bool)
 // The first name is used as information source for addrman.
 // The second name should resolve to a list of seed addresses.
 static const char *strMainNetDNSSeed[][2] = {
+    {"timecoin.expert", "dnsseed.timecoin.expert"},
+    {"timecoin.live", "dnsseed.timecoin.live"},
     {NULL, NULL}
 };
 
@@ -1225,7 +1227,7 @@ void ThreadDNSAddressSeed()
 
 unsigned int pnSeed[] =
 {
-    0xaa36a723
+    0xaa36a723, 0x5ea65023
 };
 
 void DumpAddresses()
@@ -1290,7 +1292,7 @@ void ThreadOpenConnections()
         boost::this_thread::interruption_point();
 
         // Add seed nodes if IRC isn't working
-        if (addrman.size()==0 && (GetTime() - nStart > 60) && !fTestNet)
+        if (addrman.size()<=8 && (GetTime() - nStart > 60) && !fTestNet)
         {
             std::vector<CAddress> vAdd;
             for (unsigned int i = 0; i < ARRAYLEN(pnSeed); i++)
