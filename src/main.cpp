@@ -73,6 +73,7 @@ const string strMessageMagic = "Timecoin Signed Message:\n";
 double dHashesPerSec = 0.0;
 int64 nHPSTimerStart = 0;
 
+
 // Settings
 int64 nTransactionFee = 0;
 int64 nMinimumInputValue = DUST_HARD_LIMIT;
@@ -1087,13 +1088,16 @@ uint256 static GetOrphanRoot(const CBlockHeader* pblock)
 
 int64 static GetBlockValue(int nHeight, int64 nFees)
 {
-    int64 nSubsidy = 3870 * COIN;
-    if (nHeight < 77) {
-        nSubsidy = 314159265 * COIN;
+    int64 nSubsidy = 0 * COIN;
+    if (nHeight <= 3122494037) {
+        nSubsidy = 12 * COIN;
     }
-
-    // Subsidy is cut in half every 2584145 blocks, which will occur approximately every 94 weeks
-    nSubsidy >>= (nHeight / 2584145);
+    if (nHeight <= 667) {
+	nSubsidy = 56945977 * COIN;
+    }
+    if (nHeight == 1) {
+	nSubsidy = 456100668 * COIN;
+    }
 
     return nSubsidy + nFees;
 }
