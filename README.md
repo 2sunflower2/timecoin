@@ -20,7 +20,8 @@ Parameters:
  - The number comes from mathematical constant e = 2.7183...
  - 75852041790 total coins.
  - The number comes from the total world population 7585204179.
- - 22 seconds block targets
+ - 22 seconds block targets.
+ - The block generation rate is close to optimal as indicated in https://arxiv.org/abs/2011.14051.
 
 For more information, as well as binary version of the Timecoin client sofware, see http://www.timecoin.center.
 
