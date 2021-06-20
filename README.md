@@ -17,7 +17,7 @@ Use the virtual world to empower the possible change to a better world.
 
 Parameters:
  - subsidy runs out in 2178.3 years. 
- - The number comes from mathematical constant e = 2.7183...
+ - The number comes from mathematical constant e = 2.718...
  - 75852041790 total coins.
  - The number comes from the total world population 7585204179.
  - 22 seconds block targets.
