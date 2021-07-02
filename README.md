@@ -1,7 +1,7 @@
 Timecoin integration/staging tree
 ================================
 
-http://www.timecoin.org
+http://www.timecoin.center
 
 Copyright (c) 2009-2014 Bitcoin Developers
 Copyright (c) 2011-2014 Litecoin Developers
@@ -9,18 +9,21 @@ Copyright (c) 2021 Timecoin Developers
 
 What is Timecoin?
 ----------------
+Time Coin the currency for the Timecoin Community. Once member obtained Timecoin, they are free to use it to exchange services with other member of the community. We believe everyone's time is becoming more valuable over the time... So as the value of Timecoin. We know there will be interest for currency, we call it the time value of money. What will the time value of time be? We expect it grow even faster than currency.
 
-Timecoin is a lite version of Bitcoin using scrypt as a proof-of-work algorithm.
- - 2.5 minute block targets
- - subsidy halves in 840k blocks (~4 years)
- - ~84 million total coins
+Be the bridge between the virtual and reality. 
 
-The rest is the same as Bitcoin.
- - 50 coins per block
- - 2016 blocks to retarget difficulty
+Use the virtual world to empower the possible change to a better world.
 
-For more information, as well as an immediately useable, binary version of
-the Timecoin client sofware, see http://www.timecoin.org.
+Parameters:
+ - subsidy runs out in 2178.3 years. 
+ - The number comes from mathematical constant e = 2.718...
+ - 75852041790 total coins.
+ - The number comes from the total world population 7585204179.
+ - 22 seconds block targets.
+ - The block generation rate is close to optimal as indicated in https://arxiv.org/abs/2011.14051.
+
+For more information, as well as binary version of the Timecoin client sofware, see http://www.timecoin.center.
 
 License
 -------
