@@ -52,6 +52,10 @@ The `master` branch is regularly built and tested, but is not guaranteed to be
 completely stable. [Tags](https://github.com/timecoin-project/timecoin/tags) are created
 regularly to indicate new official, stable release versions of Timecoin.
 
+Make
+We need to install several software or libraries before making a build, such as qt5-make, boost, openssl, and BerkeleyDB 4.8
+Refer to the following link for details: https://github.com/bitcoin/bitcoin/blob/master/doc/build-unix.md
+
 Testing
 -------
 
